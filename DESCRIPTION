@@ -1,0 +1,29 @@
+Package: tssimulate
+Title: Simulating Time Series from Data Generating Processes
+Version: 0.0.0.9000
+Authors@R: 
+        	c(person(given="Hansika", 
+        		 family="Hewamalage", 
+        		 email="hansika.hewamalage@monash.edu", 
+        		 role=c("aut", "cre")),
+        	  person(given="Christoph", 
+        		 family="Bergmeir",
+        		 email="christoph.bergmeir@monash.edu",
+        		 role= "aut"),
+            person(given="Kasun",
+        		 family="Bandara",
+        		 email="kasun.bandara@unimelb.edu.au",
+        		 role="aut"))
+Depends: 
+      R(>= 3.6)
+Imports:
+       smooth,
+       forecast
+License: GPL-3
+URL: https://github.com/HansikaPH/tssimulate
+BugReports: https://github.com/HansikaPH/tssimulate/issues
+Description: A package for simulating time series from a number of data generating processes including AR, SAR, Chaotic Logistic Map, Mackey-Glass Equations and Fourier Terms with given options from the user.
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
