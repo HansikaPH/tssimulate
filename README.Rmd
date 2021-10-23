@@ -1,0 +1,49 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# tssimulate
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+tssimulate is a library for simulating time series from known Data Generating Processes.
+
+## Installation
+
+<!-- You can install the released version of tssimulate from [CRAN](https://CRAN.R-project.org) with: -->
+
+<!-- ``` r -->
+<!-- install.packages("tssimulate") -->
+<!-- ``` -->
+You can install the development version from [GitHub](https://github.com/) with:
+```r
+install.packages("devtools")
+devtools::install_github("HansikaPH/tssimulate")
+```
+
+## Example
+
+This is a basic example which shows you how to simulate 5 time series of length 10, using an AR(3) DGP:
+
+```{r example}
+library(tssimulate)
+## basic example code
+
+sim <- sim_ar(ar_order = 3, length = 10, no_series = 5)
+sim$parameters
+
+sim$series
+```
+

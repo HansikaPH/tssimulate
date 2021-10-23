@@ -1,3 +1,9 @@
 .Rproj.user
 .Rhistory
 .RData
+./.git
+.idea/
+todo
+
+# Jupyter Notebook
+.ipynb_checkpoints
